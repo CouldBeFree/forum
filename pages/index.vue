@@ -1,15 +1,22 @@
 <template>
-  <h1>Test</h1>
+  <div>
+    <div class="form-holder" v-if="formToggle">
+      <Signup/>
+    </div>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+    import Signup from '~/components/Signup.vue'
 
-export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
-}
+    export default {
+        components: {
+            Signup
+        },
+        computed: {
+            formToggle() {
+                return this.$store.state.signUp
+            }
+        }
+    }
 </script>
