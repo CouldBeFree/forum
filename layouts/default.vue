@@ -40,6 +40,7 @@
 </template>
 
 <script>
+    import { mapMutations } from 'vuex';
 
     export default {
         data() {
@@ -50,6 +51,11 @@
                 title: 'Forum',
                 isLogged: false
             }
+        },
+        methods: {
+            ...mapMutations([
+                'toggleSignUp'
+            ])
         }
     }
 </script>
