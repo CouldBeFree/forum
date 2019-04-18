@@ -1,4 +1,4 @@
-# forum
+# Forum
 
 > My top-notch Nuxt.js project
 
@@ -17,6 +17,14 @@ $ npm start
 
 # generate static project
 $ npm run generate
+
+# run server
+$ npm install -g json-server
+$ npm install json server --save
+
+$ json-server --watch db.json // to run json server on http://localhost:3000
+to run server on another port
+$ json-server -p <your port> db.json
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
