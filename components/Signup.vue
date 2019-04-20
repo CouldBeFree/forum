@@ -6,7 +6,6 @@
             <v-form ref="form">
                 <v-text-field
                         v-model="name"
-                        :counter="20"
                         label="Name"
                         required
                         :rules="nameRules"
@@ -21,27 +20,15 @@
 
                 <v-text-field
                         v-model="password"
-                        :counter="20"
+                        :type="'password'"
                         label="Password"
                         required
                         :rules="passwordRules"
                 ></v-text-field>
-                <v-btn
-                        color="error"
-                        @click="reset"
-                >
-                    Reset Form
-                </v-btn>
-
-                <v-btn
-                        color="warning"
-                        @click="toggleSignUp"
-                >
+                <v-btn color="error" @click="toggleSignUp">
                     Close form
                 </v-btn>
-                <v-btn
-                        @click="submit"
-                >
+                <v-btn color="success" @click="submit">
                     Submit
                 </v-btn>
             </v-form>
@@ -52,14 +39,17 @@
 
 <script>
     import { mapMutations } from 'vuex';
+    import axios from '~/plugins/axios';
 
     export default {
 
         data: () => ({
             nameRules: [
+                v => !!v || 'Name is required',
                 v => v.length >= 3 || 'Minimum length is 3 characters'
             ],
             passwordRules: [
+                v => !!v || 'Password is required',
                 v => v.length >= 5 || 'Minimum password length is 5 characters'
             ],
             emailRules: [
@@ -78,15 +68,17 @@
             ...mapMutations([
                 'toggleSignUp'
             ]),
-            submit () {
-                // this.$v.$touch();
+            async submit() {
+                const user = {
+                    name: this.name,
+                    password: this.password,
+                    email: this.email
+                };
                 if(this.$refs.form.validate()){
-                    alert('Valid')
+                    const response = await axios.post('/users', user);
+                    console.log(response);
                 }
             }
-        },
-        computed: {
-
         }
     }
 </script>

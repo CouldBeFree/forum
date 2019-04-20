@@ -7,16 +7,16 @@
 </template>
 
 <script>
-    import Signup from '~/components/Signup.vue'
+  import Signup from '~/components/Signup.vue';
 
-    export default {
-        components: {
-            Signup
-        },
-        computed: {
-            formToggle() {
-                return this.$store.state.signUp
-            }
-        }
+  export default {
+    components: {
+      Signup
+    },
+    computed: {
+      formToggle() {
+        return this.$store.state.signUp
+      }
     }
+  }
 </script>
