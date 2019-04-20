@@ -32,6 +32,14 @@
                     Submit
                 </v-btn>
             </v-form>
+            <v-alert
+                    v-model="alert"
+                    dismissible
+                    type="success"
+                    transition="scale-transition"
+            >
+                Registration successful
+            </v-alert>
         </v-flex>
         <v-flex xs3/>
     </v-layout>
@@ -58,7 +66,8 @@
             ],
             name: '',
             password: '',
-            email: ''
+            email: '',
+            alert: false
         }),
 
         methods: {
@@ -76,7 +85,17 @@
                 };
                 if(this.$refs.form.validate()){
                     const response = await axios.post('/users', user);
-                    console.log(response);
+                    const status = response.status;
+                    if(status > 200) {
+                        this.$refs.form.reset();
+                        this.alert = true;
+                        setTimeout(() => {
+                            this.alert = false;
+                        }, 4000);
+                        this.name = '';
+                        this.password = '';
+                        this.email = '';
+                    }
                 }
             }
         }

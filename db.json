@@ -16,7 +16,30 @@
   "profile": {
     "name": "typicode"
   },
-  "users": {
-
-  }
+  "users": [
+    {
+      "name": "Test Name",
+      "password": "sdfdfgsdfsdgf",
+      "email": "zoriaalexandr@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Sasha Zoria",
+      "password": "sertsetresrtesrt",
+      "email": "propokerstar90@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Test Name",
+      "password": "asdadsadads",
+      "email": "zoriaalexandr@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Test Name",
+      "password": "fasdfasdfasfasdfdsa",
+      "email": "zoriaalexandr@gmail.com",
+      "id": 4
+    }
+  ]
 }
