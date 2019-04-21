@@ -16,6 +16,12 @@
   "profile": {
     "name": "typicode"
   },
+  "category":[
+    {
+      "name": "Elections",
+      "id": 1
+    }
+  ],
   "users": [
     {
       "name": "Test Name",
