@@ -6,7 +6,6 @@
         <div class="form-holder" v-if="formLogin">
             <Login/>
         </div>
-        <nuxt-link to="/category">About (internal link that belongs to the Nuxt App)</nuxt-link>
         <TopicList :posts="posts"/>
     </div>
 </template>
@@ -29,9 +28,8 @@
             Login,
             TopicList
         },
-        async asyncData(context) {
-            console.log(context);
-            const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+        async asyncData() {
+            const response = await axios.get('/category');
             const posts = response.data;
             return {posts}
         },

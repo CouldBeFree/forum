@@ -1,17 +1,24 @@
 <template>
-    <v-list>
-        <v-list-tile v-for="item in posts" :key="item.id">
-            <v-list-tile-content>
-                <v-list-tile-title v-text="item.title"></v-list-tile-title>
-            </v-list-tile-content>
-        </v-list-tile>
+    <v-list two-line>
+        <template v-for="(item, index) in posts">
+            <v-subheader
+            :key="item.id">
+                {{item.name}}
+            </v-subheader>
+            <v-divider v-if="index != arrayLength" :key="item.id"></v-divider>
+        </template>
     </v-list>
 </template>
 
 <script>
 
     export default {
-        props: ['posts']
+        props: ['posts'],
+        data(){
+            return{
+                arrayLength: this.posts.length - 1
+            }
+        }
     }
 </script>
 
