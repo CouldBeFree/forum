@@ -1,29 +1,26 @@
 <template>
-    <v-list>
-        <v-list-tile>
-            <v-list-tile-content>
-                <nuxt-link :to="'/category/'">Test</nuxt-link>
-            </v-list-tile-content>
-            <h1>Test {{category}}</h1>
-            <h1>I am topic list</h1>
-            <button @click="test">Test click</button>
-        </v-list-tile>
-    </v-list>
+    <div>
+        <v-list v-for="item in posts">
+            <v-list-tile :key="item.id">
+                <v-list-tile-content>
+                    <nuxt-link :to="'/category/'">Test</nuxt-link>
+                </v-list-tile-content>
+                <h1>{{item.title}}</h1>
+                <button @click="test">Test click</button>
+            </v-list-tile>
+        </v-list>
+    </div>
 </template>
 
 <script>
     import axios from '~/plugins/axios';
 
     export default {
-        data () {
-            return {
-                category: 'Some category'
-            }
-        },
-        asyncData() {
-            return axios.get('category')
-                .then((res) => {
-                    return {category: res.data}
+        asyncData(context) {
+            console.log(context);
+            return axios.get('https://jsonplaceholder.typicode.com/posts')
+                .then(response => {
+                    return {posts: response.data}
                 })
         },
         methods:{
