@@ -19,23 +19,123 @@
   "category":[
     {
       "name": "Elections",
-      "id": 1
+      "id": 1,
+      "posts": [
+        {
+          "id": 1,
+          "name": "Putin ready to meet Zelensky in person",
+          "body": "Russian President Vladimir Putin does not rule out the possibility to meet the newly elected president of Ukraine Volodymyr Zelensky in person. Putin stated this at the press conference in Beijing on April 27, as Izvestia reported. According to the report, Putin claimed he would speak about the ways of solving the Donbas crisis during the meeting if it takes place."
+        },
+        {
+          "id": 2,
+          "name": "Zelensky administration: dissolution of Ukrainian parliament is possible due to absence of coalition",
+          "body": "According to Razumkov, various organizations appealed to Rada Speaker Andriy Parubiy with a request to provide a list naming the deputies who are members of the coalition, but did not receive a response. “By the way, this violates current legislation. Therefore, the precedent for dissolution exists,” he noted."
+        },
+        {
+          "id": 3,
+          "name": "Court decision on Privatbank proves Ukraine’s judicial reform was failed. Here’s how to fix it",
+          "body": "Ihor Kolomoyskyi, one of the bank’s former owners, used it to pay large credits to his fictitious firms. In that way, he laundered at least US$2bn. The National Bank of Ukraine declared the bank insolvent in 2016 and nationalized it almost immediately. In fact, the nationalization was done improperly. According to the law, nationalization of the bank takes approximately a year. The first step is that a bank is recognized as a problematic one. Later it has 6 months to reorganize its operations properly. Only after that term, if there are no improvements, the nationalization or liquidation of the bank takes place. In the case of Privatbank, everything was done almost immediately, in a few days of December 2016."
+        },
+        {
+          "id": 4,
+          "name": "Poroshenko’s legacy after 5 years: A presidency of historic achievement",
+          "body": "It’s too soon to write Petro Poroshenko’s political obituary, as the outgoing Ukrainian president still enjoys enough support in the country for his party to win seats in the Verkhovna Rada in the parliamentary elections in October. But his days in the top seat of Ukrainian politics will soon be over. There is little chance of a big political comeback for Poroshenko akin to that of Viktor Yanukovych after the 2004 Orange Revolution: The incumbent president was mauled in the presidential election by the inexperienced newcomer Volodymyr Zelenskiy, suffering the worst defeat in percentage terms in Ukrainian presidential election history. The majority of Ukrainian voters wanted literally anyone but Poroshenko to win in 2019."
+        }
+      ]
     },
     {
       "name": "Sports",
-      "id": 2
+      "id": 2,
+      "posts": [
+        {
+          "id": 1,
+          "name": "Mario Vrancic blasts Norwich past Blackburn and into the Premier League",
+          "body": "Norwich confirmed their return to the Premier League with a swagger, winning here with the brio that has become the leitmotif under their German manager, Daniel Farke. They will go up as title winners if they earn a point or more next Sunday at Aston Villa. Not that Farke was thinking about that immediately after a promotion he described as “a sensation and a miracle”."
+        },
+        {
+          "id": 2,
+          "name": "Brighton edge towards safety as Pascal Gross earns draw against Newcastle",
+          "body": "This game had edged into its final minute when Anthony Knockaert swung over a cross and Glenn Murray, free at the far post, rose marginally too early and nodded the ball over a gaping net. Chris Hughton buried his head in his hands in disbelief, the chance of a first league win since early March passed up. Yet, once the dust had settled, Brighton could still reflect on a point which may well have preserved their Premier League status. The draw they secured late, with a first goal for seven weeks, has edged them four points clear of Cardiff and, even with daunting fixtures still to come against Arsenal and Manchester City, the likelihood is their current tally should prove sufficient to survive. Given the difference in respective goal differences, the Welsh club will realistically have to win their last two games, against Crystal Palace and at Manchester United, to stand a chance. That is probably asking too much."
+        },
+        {
+          "id": 3,
+          "name": "Williams concerned over Azerbaijan GP safety after drain cover causes wreck",
+          "body": "The Williams deputy team principal, Claire Williams, has expressed her anger and concerns about safety after George Russell’s Williams car was severely struck by a loose manhole cover during practice for this weekend’s Azerbaijan Grand Prix. Sauber’s Kimi Räikkönen also condemned the FIA and said it had made F1 look amateurish. The cover flew up into the bottom of Russell’s car, shattering elements of its rear and floor, forcing him to stop and for the session to be ended after only 10 minutes while the other covers were inspected for safety purposes."
+        },
+        {
+          "id": 4,
+          "name": "England's Alex Hales banned for 21 days for recreational drug use",
+          "body": "The England batsman and World Cup contender Alex Hales is serving a 21-day ban from cricket for recreational drug use, the Guardian can reveal.\n\nHales, 30, has missed the start of his county Nottinghamshire’s Royal London Cup campaign, with the club stating last Thursday that he had “made himself unavailable for selection for personal reasons” and setting no date for his return."
+        }
+      ]
     },
     {
       "name": "Quantum Physycs",
-      "id": 3
+      "id": 3,
+      "posts": [
+        {
+          "id": 1,
+          "name": "Quantum Physics Is Discrete",
+          "body": "It's right there in the name-- the word quantum comes from the Latin for how much and reflects the fact that quantum models always involve something coming in discrete amounts. The energy contained in a quantum field comes in integer multiples of some fundamental energy. For light, this is associated with the frequency and wavelength of the light-- high-frequency, short-wavelength light has a large characteristic energy, which low-frequency, long-wavelength light has a small characteristic energy."
+        },
+        {
+          "id": 2,
+          "name": "Quantum Physics Is Probabilistic",
+          "body": "One of the most surprising and (historically, at least) controversial aspects of quantum physics is that it's impossible to predict with certainty the outcome of a single experiment on a quantum system. When physicists predict the outcome of some experiment, the prediction always takes the form of a probability for finding each of the particular possible outcomes, and comparisons between theory and experiment always involve inferring probability distributions from many repeated experiments."
+        },
+        {
+          "id": 3,
+          "name": "Quantum Physics Is Non-Local",
+          "body": "The last great contribution Einstein made to physics was not widely recognized as such, mostly because he was wrong. In a 1935 paper with his younger colleagues Boris Podolsky and Nathan Rosen (the EPR paper), Einstein provided a clear mathematical statement of something that had been bothering him for some time, an idea that we now call entanglement.The EPR paper argued that quantum physics allowed the existence of systems where measurements made at widely separated locations could be correlated in ways that suggested the outcome of one was determined by the other. They argued that this meant the measurement outcomes must be determined in advance, by some common factor, because the alternative would require transmitting the result of one measurement to the location of the other at speeds faster than the speed of light. Thus, quantum mechanics must be incomplete, a mere approximation to some deeper theory (a local hidden variable theory, one where the results of a particular measurement do not depend on anything farther away from the measurement location than a signal could travel at the speed of light (local), but are determined by some factor common to both systems in an entangled pair (the hidden variable))."
+        },
+        {
+          "id": 4,
+          "name": "Quantum Physics Is Probabilistic",
+          "body": "One of the most surprising and (historically, at least) controversial aspects of quantum physics is that it's impossible to predict with certainty the outcome of a single experiment on a quantum system. When physicists predict the outcome of some experiment, the prediction always takes the form of a probability for finding each of the particular possible outcomes, and comparisons between theory and experiment always involve inferring probability distributions from many repeated experiments. The mathematical description of a quantum system typically takes the form of a wavefunction, generally represented in equations by the Greek letter psi: Ψ. There's a lot of debate about what, exactly, this wavefunction represents, breaking down into two main camps: those who think of the wavefunction as a real physical thing (the jargon term for these is \"ontic\" theories, leading some witty person to dub their proponents psi-ontologists) and those who think of the wavefunction as merely an expression of our knowledge (or lack thereof) regarding the underlying state of a particular quantum object (epistemic theories)."
+        }
+      ]
     },
     {
       "name": "JavaScript",
-      "id": 4
+      "id": 4,
+      "posts": [
+        {
+          "id": 1,
+          "name": "Number Truncation in JavaScript",
+          "body": "Use Math.trunc() to truncate a floating point number and return its integer part. This function doesn't do any rounding, it simply removes all the digits following the decimal. Now you have a whole number, yay"
+        },
+        {
+          "id": 2,
+          "name": "I never understood JavaScript closures",
+          "body": "As the title states, JavaScript closures have always been a bit of a mystery to me. I have read multiple articles, I have used closures in my work, sometimes I even used a closure without realizing I was using a closure. Recently I went to a talk where someone really explained it in a way it finally clicked for me. I’ll try to take this approach to explain closures in this article. Let me give credit to the great folks at CodeSmith and their JavaScript The Hard Parts series"
+        }
+      ]
     },
     {
       "name": "Cars",
-      "id": 5
+      "id": 5,
+      "posts": [
+        {
+          "id": 1,
+          "name": "How Bicester Heritage will become a UK motoring haven",
+          "body": "When Bicester Heritage elbowed its way onto the UK car lover’s list of Most Desirable Destinations four or five years ago, its mission seemed clear: to become an important new Oxfordshire haven for vintage and classic cars, and for those who loved, owned, mended or transacted them. The miraculously well-preserved (and sympathetically restored) red-brick buildings of this former RAF base, dating from 1926 and used as a location for Churchillian movie Darkest Hour, set an instant ‘between-the-wars’ scene for anyone who drove through the old-style black-and-white boom gate, especially after a chat with gatekeeper Neil, whose genial manner also seemed to come from another time."
+        },
+        {
+          "id": 2,
+          "name": "Smooth sailing: How to build the most comfortable car",
+          "body": "The car in question is a Mercedes-Benz S-Class, the breed that has become almost as synonymous with comfort as Sellotape has with sticky-back plastic. And on this occasion it was giving advice on how best to use its seat massagers. But what is comfort in an automotive context? Is it really just about big chairs and soft springs, or is there more to it? Back in 2005 tests were conducted between an S-Class and its immediate rivals over a 300- mile route that revealed that whoever was driving the Benz had a heart rate on average five beats per minute slower than when they were driving any of the other cars. And that can’t just be squidgy seats."
+        },
+        {
+          "id": 3,
+          "name": "The Autocar guide to WLTP emissions testing",
+          "body": "By Autocar 28 April 2019 If you’re a regular reader of Autocar, you’re probably well-versed in the abbreviation WLTP. Worldwide Harmonised Light Vehicle Test Procedure is a new way of measuring vehicles’ fuel economy and emissions, and it has appeared on our pages for a number of reasons. First, there’s been plenty of related news. For example, Audi sales in the UK fell by a fifth last year, due to WLTP. Porsche has almost halved its sales so far this year, also due to WLTP. Plus, we’ve started to future-proof our first drive reviews and A-Z data pages by quoting only WLTP fuel economy and CO2 figures where possible, rather than those measured under the previous NEDC cycle."
+        },
+        {
+          "id": 4,
+          "name": "Watch live: Autocar enters the UK's biggest ever motor race",
+          "body": "Some 100 Citroen C1 race cars will race on Silverstone’s full GP circuit for 24 hours from Saturday at 5:30pm. The C1 Racing Club, which races near-standard 3dr, 1.0-litre C1s, has proved so popular as an entry-level motorsport - it’s possible to build a race car from around £3000 - that its series of endurance and 24h races races are routinely oversubscribed, so has obtained permission from Motorsport UK for a bumper entry list."
+        }
+      ]
     }
   ],
   "users": [
