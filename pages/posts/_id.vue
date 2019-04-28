@@ -1,19 +1,22 @@
 <template>
-    <v-list two-line>
-        <template v-for="(item, index) in items">
-            <v-subheader
-                    :key="item.id * Math.random()"
-            >
-                {{item.name}}
-                <!--<nuxt-link
-                        to="/posts"
-                        @click="getId(item.id)"
-                >{{item.name}}
-                </nuxt-link>-->
-            </v-subheader>
-            <v-divider></v-divider>
-        </template>
-    </v-list>
+    <div>
+        <h3 class="subheading">{{items[0].name}}</h3>
+        <v-list two-line>
+            <template v-for="item in items[0].posts">
+                <v-subheader
+                        :key="item.id * Math.random()"
+                >
+                    {{item.title}}
+                    <!--<nuxt-link
+                            to="/posts"
+                            @click="getId(item.id)"
+                    >{{item.name}}
+                    </nuxt-link>-->
+                </v-subheader>
+                <v-divider></v-divider>
+            </template>
+        </v-list>
+    </div>
 </template>
 
 <script>
@@ -21,10 +24,9 @@
 
     export default {
         async asyncData({params}){
-            console.log(params.id);
             const response = await axios.get(`/category?name=${params.id}`);
             const items = response.data;
-            //console.log(items);
+            console.log(items);
             return {items};
         }
     }
