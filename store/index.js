@@ -2,7 +2,8 @@ export const state = () => ({
     signUp: false,
     login: false,
     isLogged: false,
-    user: ''
+    user: '',
+    currentCategory: ''
 });
 
 export const mutations = {
@@ -17,5 +18,8 @@ export const mutations = {
     },
     setUser(state, payload) {
         state.user = payload
+    },
+    setCategory(state, payload) {
+        state.currentCategory = payload
     }
 };

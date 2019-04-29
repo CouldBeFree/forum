@@ -6,12 +6,10 @@
                 <v-subheader
                         :key="item.id * Math.random()"
                 >
-                    {{item.title}}
-                    <!--<nuxt-link
-                            to="/posts"
-                            @click="getId(item.id)"
-                    >{{item.name}}
-                    </nuxt-link>-->
+                    <nuxt-link
+                            :to="'/article/' + item.title"
+                    >{{item.title}}
+                    </nuxt-link>
                 </v-subheader>
                 <v-divider></v-divider>
             </template>
@@ -21,13 +19,21 @@
 
 <script>
     import axios from '~/plugins/axios';
+    import { mapMutations } from 'vuex';
 
     export default {
         async asyncData({params}){
             const response = await axios.get(`/category?name=${params.id}`);
             const items = response.data;
-            console.log(items);
             return {items};
+        },
+        methods: {
+            ...mapMutations([
+                'setCategory'
+            ])
+        },
+        created() {
+            this.setCategory(this.items[0].name)
         }
     }
 </script>
